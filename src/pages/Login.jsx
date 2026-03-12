@@ -247,22 +247,6 @@ export default function Login() {
               </div>
             )}
 
-            {/* <div className="mt-8 p-5 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl">
-              <p className="text-sm font-semibold text-blue-900 mb-3">🔐 Demo Credentials:</p>
-              <div className="text-sm text-blue-800 space-y-2">
-                <div className="flex items-start gap-2">
-                  <span className="font-semibold min-w-[70px]">Admin:</span>
-                  <div>
-                    <p>admin@healthcare.com</p>
-                    <p className="text-blue-600">Admin@123</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="font-semibold min-w-[70px]">Doctor:</span>
-                  <p className="text-blue-700">dr.smith@hospital.com (signup first)</p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </motion.div>
       </div>
