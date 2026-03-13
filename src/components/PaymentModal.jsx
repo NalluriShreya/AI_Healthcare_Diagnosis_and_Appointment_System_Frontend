@@ -1,4 +1,7 @@
-// PaymentModal.jsx - Professional Simulated Payment UI (Compact Fix)
+// PaymentModal.jsx
+
+// This component simulates a secure online payment system that processes payment 
+// before confirming a doctor's appointment.
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -21,16 +24,16 @@ const CONSULTATION_FEE = 299;
 const PLATFORM_FEE = 19;
 const TOTAL = CONSULTATION_FEE + PLATFORM_FEE;
 
-function luhnCheck(num) {
-  let arr = (num + '').split('').reverse().map((x) => parseInt(x));
-  let lastDigit = arr.splice(0, 1)[0];
-  let sum = arr.reduce(
-    (acc, val, i) => (i % 2 !== 0 ? acc + val : acc + ((val * 2) % 9) || 9),
-    0
-  );
-  sum += lastDigit;
-  return sum % 10 === 0;
-}
+// function luhnCheck(num) {
+//   let arr = (num + '').split('').reverse().map((x) => parseInt(x));
+//   let lastDigit = arr.splice(0, 1)[0];
+//   let sum = arr.reduce(
+//     (acc, val, i) => (i % 2 !== 0 ? acc + val : acc + ((val * 2) % 9) || 9),
+//     0
+//   );
+//   sum += lastDigit;
+//   return sum % 10 === 0;
+// }
 
 function detectCardType(num) {
   const n = num.replace(/\s/g, '');

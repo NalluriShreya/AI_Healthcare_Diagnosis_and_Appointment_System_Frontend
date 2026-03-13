@@ -252,7 +252,7 @@ export default function ForgotPasswordModal({ isOpen, onClose, defaultRole = 'pa
       setLoading(false);
     }
   };
-
+ 
   // ── Step 2: Verify OTP ───────────────────────────────────
   const handleVerifyOTP = async () => {
     if (otp.length < 6) { toast.error('Please enter the full 6-digit OTP.'); return; }

@@ -10,6 +10,8 @@ export const useAuthStore = create((set) => ({
   isAuthenticated: !!localStorage.getItem('token'),
   
   // Actions
+
+  // Runs after login
   setAuth: (user, token) => {
     localStorage.setItem('user', JSON.stringify(user));
     localStorage.setItem('token', token);
@@ -20,6 +22,7 @@ export const useAuthStore = create((set) => ({
     });
   },
   
+  // Runs when user logs out
   logout: () => {
     localStorage.removeItem('user');
     localStorage.removeItem('token');

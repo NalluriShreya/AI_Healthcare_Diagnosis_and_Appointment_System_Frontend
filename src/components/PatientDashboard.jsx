@@ -710,7 +710,7 @@ function HomeView({ user, stats, features, myAppointments }) {
   );
 }
 
-// Book Appointment View Component - WITH GOOGLE-LIKE AUTOCOMPLETE SEARCH
+// Book Appointment View Component
 function BookAppointmentView({ token, onSuccess }) {
   const [step, setStep] = useState(1);
   const [isInputFocused, setIsInputFocused] = useState(false);
@@ -852,7 +852,7 @@ function BookAppointmentView({ token, onSuccess }) {
   };
 
   const handleDoctorSelect = (doctor) => {
-    console.log("Selected doctor:", doctor); // ADD THIS
+    console.log("Selected doctor:", doctor);
 
     setSelectedDoctor({
       doctor_id: doctor.doctor_id,
